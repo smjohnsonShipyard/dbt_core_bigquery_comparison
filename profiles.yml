@@ -1,4 +1,4 @@
-soccer_538:
+orchestration_comparison:
   target: dev
   outputs:
     dev:
