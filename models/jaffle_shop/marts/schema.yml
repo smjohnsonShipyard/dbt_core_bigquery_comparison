@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: mart_customers
+    description: ""
+    columns:
+      - name: customer_id
+        description: "The customer id. Primary key"
+
+      - name: first_name
+        description: "First name of customer"
+
+      - name: last_name
+        description: "Last name of customer"
+
+      - name: full_name
+        description: "Full name of customer"
+  - name: mart_orders
+    description: ""
+    columns:
+      - name: order_id
+        description: "ID of the order. Primary Key"
+
+      - name: customer_id
+        description: "The customer id."
+
+      - name: order_date
+        description: "Date of the order"
+
+      - name: status
+        description: "Status of the order"
+  - name: mart_payments
+    description: ""
+    columns:
+      - name: payment_id
+        description: "ID of the payment Primary Key"
+
+      - name: order_id
+        description: "ID of the order."
+
+      - name: payment_method
+        description: "Method of payment"
+
+      - name: amount
+        description: "amount of payment"
